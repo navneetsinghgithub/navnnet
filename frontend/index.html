@@ -41,8 +41,6 @@
 <body>
   <div id="root"></div>
   <script type="module" src="/src/main.jsx"></script>
-  <script src="https://unpkg.com/feather-icons"></script>
-
   <!-- <script src="/app-assets/vendors/js/vendors.min.js"></script> -->
 
   <script src="/app-assets/vendors/js/charts/apexcharts.min.js"></script>
@@ -56,28 +54,14 @@
 
   <script>
     $(window).on('load', function () {
-      if (window.feather) {
+      if (feather) {
         feather.replace({
           width: 14,
           height: 14
         });
       }
-    });
+    })
   </script>
-  <script>
-    window.addEventListener('DOMContentLoaded', function () {
-      if (window.feather) {
-        feather.replace({
-          width: 14,
-          height: 14
-        });
-      } else {
-        console.warn("Feather not loaded");
-      }
-    });
-  </script>
-
-
 
   <!-- <script>
     // <![CDATA[  <-- For SVG support
@@ -116,6 +100,7 @@
     }
     // ]]>
   </script> -->
+  
 </body>
 
 </html>

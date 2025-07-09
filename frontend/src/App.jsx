@@ -32,8 +32,8 @@ function App() {
           <Route path="/Dashboard" element={<Dashboard />} />
 
           {/* //////////////////////ADMIN///////////////// */}
-          <Route path="/EditProfile" element={<EditProfile />} />
-          <Route path="/ViewProfile" element={<ViewProfile />} />
+          <Route path="/EditProfile/:id" element={<EditProfile />} />
+          <Route path="/ViewProfile/:id" element={<ViewProfile />} />
           <Route path="/ChangePassword" element={<ChangePassword />} />
 
           {/* ////////////////////USERS///////////// */}

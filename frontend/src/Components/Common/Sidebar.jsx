@@ -1,5 +1,9 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
+import {
+  Anchor, Home, Info, Layers,
+  Package, Phone, Shield, User
+} from 'react-feather'
 
 function Sidebar() {
   return (
@@ -26,82 +30,58 @@ function Sidebar() {
         <ul className="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">
 
           <li className="nav-item">
-            <NavLink
-              to="/Dashboard"
-              className={({ isActive }) => `d-flex align-items-center ${isActive ? 'active' : ''}`}
-            >
-              <i data-feather="home" />
-              <span className="menu-title text-truncate" data-i18n="Dashboards">Dashboards</span>
+            <NavLink to="/Dashboard" className={({ isActive }) => `d-flex align-items-center ${isActive ? 'active' : ''}`}>
+              <Home/>
+              <span data-i18n="Dashboards">Dashboards</span>
             </NavLink>
           </li>
 
           <li className="nav-item">
-            <NavLink
-              to="/Listing"
-              className={({ isActive }) => `d-flex align-items-center ${isActive ? 'active' : ''}`}
-            >
-              <i data-feather="user" />
-              <span className="menu-title text-truncate" data-i18n="User">User</span>
+            <NavLink to="/Listing" className={({ isActive }) => `d-flex align-items-center ${isActive ? 'active' : ''}`}>
+              <User/>
+              <span data-i18n="User">User</span>
             </NavLink>
           </li>
 
           <li className="nav-item">
-            <NavLink
-              to="/CategoryListing"
-              className={({ isActive }) => `d-flex align-items-center ${isActive ? 'active' : ''}`}
-            >
-              <i data-feather="mail" />
-              <span className="menu-title text-truncate" data-i18n="Category">Category</span>
+            <NavLink to="/CategoryListing" className={({ isActive }) => `d-flex align-items-center ${isActive ? 'active' : ''}`}>
+              <Layers/>
+              <span data-i18n="Category">Category</span>
             </NavLink>
           </li>
 
           <li className="nav-item">
-            <NavLink
-              to="/SubCategoryListing"
-              className={({ isActive }) => `d-flex align-items-center ${isActive ? 'active' : ''}`}
-            >
-              <i data-feather="mail" />
-              <span className="menu-title text-truncate" data-i18n="SubCategory">SubCategory</span>
+            <NavLink to="/SubCategoryListing" className={({ isActive }) => `d-flex align-items-center ${isActive ? 'active' : ''}`}>
+              <Package/>
+              <span data-i18n="SubCategory">SubCategory</span>
             </NavLink>
           </li>
 
           <li className="nav-item">
-            <NavLink
-              to="/ContactListing"
-              className={({ isActive }) => `d-flex align-items-center ${isActive ? 'active' : ''}`}
-            >
-              <i data-feather="phone" />
-              <span className="menu-title text-truncate" data-i18n="ContactUs">ContactUs</span>
+            <NavLink to="/ContactListing" className={({ isActive }) => `d-flex align-items-center ${isActive ? 'active' : ''}`}>
+              <Phone/>
+              <span data-i18n="ContactUs">ContactUs</span>
             </NavLink>
           </li>
 
           <li className="nav-item">
-            <NavLink
-              to="/TermCondition"
-              className={({ isActive }) => `d-flex align-items-center ${isActive ? 'active' : ''}`}
-            >
-              <i data-feather="mail" />
-              <span className="menu-title text-truncate" data-i18n="TermCondition">Terms & Condition</span>
+            <NavLink to="/TermCondition" className={({ isActive }) => `d-flex align-items-center ${isActive ? 'active' : ''}`}>
+              <Anchor/>
+              <span  data-i18n="TermCondition">Terms & Condition</span>
             </NavLink>
           </li>
 
           <li className="nav-item">
-            <NavLink
-              to="/PrivacyPolicy"
-              className={({ isActive }) => `d-flex align-items-center ${isActive ? 'active' : ''}`}
-            >
-              <i data-feather="mail" />
-              <span className="menu-title text-truncate" data-i18n="PrivacyPolicy">Privacy & Policy</span>
+            <NavLink to="/PrivacyPolicy" className={({ isActive }) => `d-flex align-items-center ${isActive ? 'active' : ''}`}>
+              <Shield/>
+              <span data-i18n="PrivacyPolicy">Privacy & Policy</span>
             </NavLink>
           </li>
 
           <li className="nav-item">
-            <NavLink
-              to="/AboutUs"
-              className={({ isActive }) => `d-flex align-items-center ${isActive ? 'active' : ''}`}
-            >
-              <i data-feather="mail" />
-              <span className="menu-title text-truncate" data-i18n="AboutUs">About Us</span>
+            <NavLink to="/AboutUs" className={({ isActive }) => `d-flex align-items-center ${isActive ? 'active' : ''}`}>
+              <Info />
+              <span data-i18n="AboutUs">About Us</span>
             </NavLink>
           </li>
 
@@ -110,6 +90,5 @@ function Sidebar() {
     </div>
   )
 }
-
 
 export default Sidebar
