@@ -53,9 +53,9 @@ function App() {
 
           {/* //////////////////// SUB CATEGORY ///////////// */}
           <Route path="/SubCategoryAdd" element={<SubCategoryAdd />} />
-          <Route path="/SubCategoryEdit" element={<SubCategoryEdit />} />
+          <Route path="/SubCategoryEdit/:id" element={<SubCategoryEdit />} />
           <Route path="/SubCategoryListing" element={<SubCategoryListing />} />
-          <Route path="/SubCategoryView" element={<SubCategoryView />} />
+          <Route path="/SubCategoryView/:id" element={<SubCategoryView />} />
 
           {/* //////////////////// CONTACTUS ///////////// */}
           <Route path="/ContactListing" element={<ContactListing />} />
